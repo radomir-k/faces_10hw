@@ -1,0 +1,59 @@
+.team {
+    margin: 4em 0;
+    position: relative;
+    font-family: 'Lato', sans-serif;
+    color:rgb(20, 20, 20);
+}
+
+.team h1 {
+    font-size: 24pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.team hr {
+    border: none;
+    background-color: rgba(127, 127, 127, .5);
+    color: rgba(127, 127, 127, .5);
+    height: 4px;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+.team h2 {
+    font-size: 16pt;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.team .item {
+    position: relative;
+}
+
+.team .w_name {
+    font-size: 14pt;
+    font-weight: 700;
+    text-align: left;
+    background: rgb(255, 255, 255);
+}
+
+.team .w_work {
+    font-size: 11pt;
+    font-weight: 300;
+    text-align: left;
+    background: rgb(255, 255, 255);
+}
+
+
+.w_tweeter,
+.w_facrbook,
+.w_google {
+    width: 43px;
+    height: 43px;
+    margin: 2px;
+    text-align: center;
+    line-height: 2.5;
+    background-color: rgba(95, 205, 230, 1);
+}
