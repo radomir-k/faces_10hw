@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     line-height: 1;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0);
     width: 100vw;
     height: 100vh;
     align-items: center;
@@ -28,7 +28,7 @@
     margin-top: 2.5%;
     margin-bottom: 1.5%;
     text-align: center;
-    background-color: rgb(243, 203, 103);
+    background-color: rgb(255, 255, 255, 0);
 }
 
 .teamcard_header h1 {
@@ -55,10 +55,19 @@
     margin-top: 3%;
 }
 
+.teamcard_person_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(255, 255, 255, 1);
+}
+
 .teamcard_person {
     width: 270px;
     height: fit-content;
-    background-color: rgb(185, 247, 105);
+    margin-left: 2%;
+    margin-left: 2%;
+    background-color: rgb(255, 255, 255, 1);
 }
 
 .teamcard_photo {
@@ -71,8 +80,23 @@
     background-repeat: no-repeat;
     background-position: 0px 0px;
     background-size: cover;
+}
+.persone_one {
     background-image: url(/images/Rectangle.svg);
 }
+
+.persone_two {
+    background-image: url(/images/Alex.png);
+}
+
+.persone_three {
+    background-image: url(/images/Elena.png);
+}
+
+.persone_four {
+    background-image: url(/images/Lili.png);
+}
+
 
 .teamcard_logo_box {
     display: inline-flex;
