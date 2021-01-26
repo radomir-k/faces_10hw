@@ -1,33 +1,38 @@
 .teamcard_root {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
     margin: 0;
     padding: 0;
     line-height: 1;
-    background-color: rgba(255, 255, 255, 0);
-    width: 100vw;
-    height: 100vh;
     align-items: center;
     justify-content: center;
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .teamcard_container {
     display: flex;
     width: 95%;
-    height: 80%;
+    min-height: 80%;
     flex-direction: column;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: flex-start;
     background-color: rgba(245, 245, 245, 1);
     font-family: 'Lato', sans-serif;
     color: rgba(20, 20, 20, 1);
 }
 
 .teamcard_header {
+    display: flex;
     width: 73%;
     height: auto;
+    flex-direction: column;
     margin-top: 2.5%;
     margin-bottom: 1.5%;
-    text-align: center;
+
 }
 
 .teamcard_header h1 {
@@ -36,6 +41,7 @@
     text-transform: uppercase;
     line-height: 1;
     margin-top: 3%;
+    text-align: center;
 }
 
 .teamcard_header hr {
@@ -45,6 +51,7 @@
     color:rgba(20, 20, 20, .4);
     height: 4px;
     margin-top: 1.5%;
+    text-align: center;
 }
 
 .teamcard_header h2 {
@@ -52,21 +59,24 @@
     font-weight: 300;
     line-height: 1.4;
     margin-top: 3%;
+    text-align: center;
 }
 
 .teamcard_person_container {
     display: flex;
     width: 72%;
     height: fit-content;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content:space-between;
     align-items: center;
+    justify-content: center;
 }
 
 .teamcard_person {
     position: relative;
     width: 270px;
     height: 320px;
+    margin: 8px;
 }
 
 .teamcard_text {
