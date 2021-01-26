@@ -1,0 +1,181 @@
+.teamcard_root {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.teamcard_container {
+    display: flex;
+    width: 95%;
+    min-height: 80%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgba(245, 245, 245, 1);
+    font-family: 'Lato', sans-serif;
+    color: rgba(20, 20, 20, 1);
+}
+
+.teamcard_header {
+    display: flex;
+    width: 73%;
+    height: auto;
+    flex-direction: column;
+    margin-top: 2.5%;
+    margin-bottom: 1.5%;
+
+}
+
+.teamcard_header h1 {
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-top: 3%;
+    text-align: center;
+}
+
+.teamcard_header hr {
+    width: 80px;
+    border: none;
+    background-color:rgba(20, 20, 20, .4);
+    color:rgba(20, 20, 20, .4);
+    height: 4px;
+    margin-top: 1.5%;
+    text-align: center;
+}
+
+.teamcard_header h2 {
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.4;
+    margin-top: 3%;
+    text-align: center;
+}
+
+.teamcard_person_container {
+    display: flex;
+    width: 72%;
+    height: fit-content;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+    justify-content: center;
+}
+
+.teamcard_person {
+    position: relative;
+    width: 270px;
+    height: 320px;
+    margin: 8px;
+}
+
+.teamcard_text {
+    position: absolute;
+    bottom: 0;
+}
+
+.teamcard_text .teamcard_name {
+    font-size: 1.2em;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.teamcard_text .teamcard_work {
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.teamcard_photo {
+    display: flex;
+    width: 270px;
+    height: 270px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(25, 180, 230, 1);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: cover;
+}
+
+.person_one {
+    background-image: url(/images/avatar.png);
+}
+
+.person_two {
+    background-image: url(/images/Alex.png);
+}
+
+.person_three {
+    background-image: url(/images/Elena.png);
+}
+
+.person_four {
+    background-image: url(/images/Lili.png);
+}
+
+.person_all {
+    background-image: url(/images/Rectangle.svg);
+}
+
+.teamcard_logo_box {
+    display: inline-flex;
+}
+
+.teamcard_logo {
+    display: flex;
+    width: 42px;
+    height: 42px;
+    margin: 3px;
+    background-color: rgba(95, 200, 230, 1);
+    align-items: center;
+    justify-content: center;
+}
+
+.teamcard_logo:hover {
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px 1px rgba(40, 40, 40, 0.6);
+}
+
+.teamcard_logo:active {
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px 1px rgba(40, 40, 40, 0.6) inset;
+}
+
+.teamcard_person:hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.flipper {
+    position: relative;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+}
+
+.front, .back {
+    width: fit-content;
+    height: auto;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.front {
+    z-index: 2;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
